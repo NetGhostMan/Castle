@@ -7,7 +7,7 @@ public class test {
 		if (str.equals("huzhiqiang")){
 			System.out.println("答对了！");
 		}else{
-			throw GameException;
+			throw new GameException();
 		}
 	}
 }

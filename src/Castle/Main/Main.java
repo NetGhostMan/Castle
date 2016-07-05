@@ -11,24 +11,25 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in);
-		String str = in.next();
 		
 		Room fst = new Room("第一关");
 		
 		// 初始化游戏；
 		initGame();
+		//执行游戏
+		System.out.println("欢迎来到"+fst);
 		fst.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed() {
 				// TODO Auto-generated method stub
 				test TEST = new test();
+				String str = "huzhixiang";
 				try {
 					TEST.isYes(str);
 				} catch (GameException e) {
 					// TODO Auto-generated catch block
-					System.out.println(e);
+					e.printStackTrace();
 				}
 			}
 		});
